@@ -615,7 +615,7 @@ define 'util', ['jquery', 'moment'], ($, moment) ->
         ###
         isNumber: (value) -> 
             if (_private.isNullOrUndefined value) or (typeof value isnt _private.NUMBER)
-                _private.debug"util.isNumber => value isn't a number.";false
+                _private.debug "util.isNumber => value isn't a number.";false
             else _private.debug "util.isNumber => value is a number.";true
                 
         
@@ -674,7 +674,7 @@ define 'util', ['jquery', 'moment'], ($, moment) ->
         ###
         isArray: (value) -> 
             if (_private.isNullOrUndefined value) or !Array.isArray value
-                _private.debug"util.isArray => value isn't an array.";false
+                _private.debug "util.isArray => value isn't an array.";false
             else _private.debug "util.isArray => value is an array.";true
         
         
@@ -831,7 +831,7 @@ define 'util', ['jquery', 'moment'], ($, moment) ->
             $.ajax {type: options.method, url : options.url, data : options.data}
             .done (response) -> 
                 try
-                    if reponse? and _private.isNotUndefined reponse
+                    if response? and _private.isNotUndefined response
                         obj = _private.toObject response
                     
                         if !obj then throw "No data received";
