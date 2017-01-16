@@ -384,8 +384,9 @@
           exception = _private.OBJECT_EXCEPTION + (!_private.isBlank(message) ? ": " + message : ".");
           _private.error("util.objectException => value is an object [" + exception + "]");
           throw new Error(_private.OBJECT_EXCEPTION);
+        } else {
+          return _private.debug`util.objectException => value isn't an object.`;
         }
-        return else_private.debug`util.objectException => value isn't an object.`;
       },
 
       /*

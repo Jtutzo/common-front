@@ -359,7 +359,7 @@ define ['jquery', 'moment'], ($, moment) ->
                 exception = _private.OBJECT_EXCEPTION + if !_private.isBlank message then ": " + message else "."
                 _private.error "util.objectException => value is an object [" + exception + "]"
                 throw new Error _private.OBJECT_EXCEPTION
-            else_private.debug"util.objectException => value isn't an object."
+            else _private.debug"util.objectException => value isn't an object."
             
         
         ###
@@ -813,7 +813,7 @@ define ['jquery', 'moment'], ($, moment) ->
                 _private.notBooleanException conf['async'], "conf.async must be a boolean value (util.factoryParamsAjax)."
                 retour['async'] = conf['async'];
 
-            retour;
+            retour
             
         
         ###
