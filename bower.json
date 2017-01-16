@@ -1,0 +1,26 @@
+{
+  "name": "common-front",
+  "homepage": "https://github.com/Jtutzo/common-front",
+  "authors": [
+    "jtutzo"
+  ],
+  "description": "common pour le front-end",
+  "main": "",
+  "keywords": [
+    "common",
+    "front-end",
+    "util"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "moment": "^2.17.1"
+  }
+}

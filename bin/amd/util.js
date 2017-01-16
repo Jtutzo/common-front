@@ -8,7 +8,7 @@
    * @version: 1.1
    * @require jquery for ajax, moment for formatted date
    */
-  define('util', ['jquery', 'moment'], function($, moment) {
+  define(['jquery', 'moment'], function($, moment) {
     var _private, _public;
     _private = {
 
@@ -720,7 +720,7 @@
        */
       isNumber: function(value) {
         if ((_private.isNullOrUndefined(value)) || (typeof value !== _private.NUMBER)) {
-          _private.debug`util.isNumber => value isn't a number.`;
+          _private.debug("util.isNumber => value isn't a number.");
           return false;
         } else {
           _private.debug("util.isNumber => value is a number.");
@@ -794,7 +794,7 @@
        */
       isArray: function(value) {
         if ((_private.isNullOrUndefined(value)) || !Array.isArray(value)) {
-          _private.debug`util.isArray => value isn't an array.`;
+          _private.debug("util.isArray => value isn't an array.");
           return false;
         } else {
           _private.debug("util.isArray => value is an array.");
@@ -982,7 +982,7 @@
         }).done(function(response) {
           var e, obj;
           try {
-            if ((typeof reponse !== "undefined" && reponse !== null) && _private.isNotUndefined(reponse)) {
+            if ((response != null) && _private.isNotUndefined(response)) {
               obj = _private.toObject(response);
               if (!obj) {
                 throw "No data received";

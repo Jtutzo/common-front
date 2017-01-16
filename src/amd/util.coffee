@@ -5,7 +5,7 @@
 # @version: 1.1
 # @require jquery for ajax, moment for formatted date
 ###
-define 'util', ['jquery', 'moment'], ($, moment) -> 
+define ['jquery', 'moment'], ($, moment) -> 
     
     _private = {
         

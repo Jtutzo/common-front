@@ -1,0 +1,26 @@
+{
+  "name": "common-front",
+  "version": "0.0.1",
+  "description": "Librairie common pour le front-end",
+  "scripts": {
+    "compile": "coffee -co bin src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jtutzo/common-front.git"
+  },
+  "keywords": [
+    "front-end",
+    "common",
+    "util",
+    "amd",
+    "default"
+  ],
+  "author": "jtutzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jtutzo/common-front/issues"
+  },
+  "homepage": "https://github.com/Jtutzo/common-front#readme"
+}
